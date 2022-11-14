@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta name="viewport" name="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+<tr class="text-center bgandcolor1">
+	<td class="fz-20">Name of the selector</td>
+	<td class="fz-20">Key word</td>
+	<td class="fz-20">Symbol</td>
+	<td class="fz-20">Purpose</td>
+	<td class="fz-20">Example</td>
+	<td class="fz-20">Description</td>
+	<td class="fz-20">Link</td>
+</tr>
+<th colspan="7">SIMPLE SELECTOR</th>
+<tr class="text-center bgandcolor2">
+	<td>Element Selector</td>
+	<td>Tag name</td>
+	<td>  </td>
+	<td>selects HTML elements based on the element name</td><td> P </td>
+	<td>selects all the P tag in the html page</td>
+	<td><a href="element.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor2">
+	<td>Class Selector</td>
+	<td>class name</td>
+	<td> . </td>
+	<td>class selector selects HTML elements with a specific class attribute. </td>
+	<td> .test </td>
+	<td>select the element which has class name as test.</td>
+	<td><a href="class.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor2">
+	<td>Id Selector</td>
+	<td>id name</td>
+	<td> # </td>
+	<td>id selector is used to select one unique element</td>
+	<td>#id1 </td>
+	<td>select the element which has id1.</td>
+	<td><a href="id.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor2">
+	<td>Universal Selector</td>
+	<td>  </td>
+	<td> * </td>
+	<td>select all the html element on the page</td>
+	<td>*{ }</td>
+	<td>Apply the style for the element on the page</td>
+	<td><a href="universal.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor2">
+	<td>Grouping Selector</td>
+	<td> tag name,tag name,tag name</td>
+	<td>  </td>
+	<td>apply style for all specified tag names</td>
+	<td>table,tr,td</td>
+	<td>select table, td, tr element</td>
+	<td><a href="group.html" target="_blank">Example</a></td>
+</tr>
+
+<th colspan="7">COMBINATOR SELECTOR</th>
+<tr class="text-center bgandcolor3">
+	<td>Descendant Selector</td>
+	<td>Tag name tag name</td>
+	<td>" "</td>
+	<td>selects all the specified tag inside the specified parent element</td>
+	<td>div p</td>
+	<td>selects the p tag inside the div tag</td>
+	<td><a href="descendent.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor3">
+	<td>Child Selector</td>
+	<td>tag name > tag name</td>
+	<td> > </td>
+	<td>selects all the specified direct child element inside parent element </td>
+	<td> div > p </td>
+	<td>selects all the direct p tag inside the div tag. </td>
+	<td><a href="child.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor3">
+	<td>Adjacent Sibling Selector</td>
+	<td> tag name + tag name </td>
+	<td> + </td>
+	<td>select all the element that is directly or immediately after the specified element.</td>
+	<td> div + p </td>
+	<td>select all the p tag next to div tag.</td>
+	<td><a href="adjacent.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor3">
+	<td>General Sibling Selector</td>
+	<td> tag name ~ tag name </td>
+	<td> ~ </td>
+	<td>select the element are next siblings of a specified element.</td>
+	<td> div ~ p </td>
+	<td>select the p tag next of a div tag.</td>
+	<td><a href="general.html" target="_blank">Example</a></td>
+</tr>
+
+<th colspan="7">PSUEDO-CLASS SELECTOR</th>
+<tr class="text-center bgandcolor4">
+	<td>Anchor Pseudo-classes</td>
+	<td>tag name : Psuedo-class</td>
+	<td> : </td>
+	<td> a tag psuedo-class are link,visited,hover,active</td>
+	<td> a:link </td>
+	<td>select a tag link </td>
+	<td><a href="psuedo.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor4">
+	<td>Psuedo-class and HTML class</td>
+	<td>tag name : Psuedo-class</td>
+	<td> : </td>
+	<td>Some important Psuedo-classes are first-child, last-child,hover,nth-child(n),root,focus, </td>
+	<td> a:hover </td>
+	<td>It give mouse over effect </td>
+	<td><a href="psuedo-hover.html" target="_blank">Example</a></td>
+</tr>
+
+<th colspan="7">PSUEDO-ELEMENT SELECTOR</th>
+<tr class="text-center bgandcolor5">
+	<td>first-line</td>
+	<td>tag name :: first-line</td>
+	<td> :: </td>
+	<td> used to add a special style to the first line of a text.</td>
+	<td> p::first-line </td>
+	<td> select the first-line of the p tag add style to it.</td>
+	<td><a href="first-line.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor5">
+	<td>first-letter</td>
+	<td>tag name :: first-letter</td>
+	<td> :: </td>
+	<td>used to add a special style to the first letter of a text.</td>
+	<td> p::first-letter </td>
+	<td>select the first-letter of the p tag</td>
+	<td><a href="first-letter.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor5">
+	<td>before</td>
+	<td> tag name :: before </td>
+	<td> :: </td>
+	<td>used to insert some content before the content of an element.</td>
+	<td> img::before </td>
+	<td>create a element before the img tag</td>
+	<td><a href="before.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor5">
+	<td>after</td>
+	<td> tag name :: after</td>
+	<td> :: </td>
+	<td>used to insert some content after the content of an element.</td>
+	<td> img::after </td>
+	<td>create a element after the img tag</td>
+	<td><a href="after.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor5">
+	<td>marker</td>
+	<td> :: marker </td>
+	<td> :: </td>
+	<td>selects the markers of list items.used in li tag.</td>
+	<td> ::marker </td>
+	<td>select the list round in ul tag</td>
+	<td><a href="marker.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor5">
+	<td>selection</td>
+	<td> :: selection </td>
+	<td> :: </td>
+	<td>matches the portion of an element that is selected by a user.</td>
+	<td> p::selection </td>
+	<td>matches the portion of P tag that is selected by a user.</td>
+	<td><a href="selection.html" target="_blank">Example</a></td>
+</tr>
+
+
+<th colspan="7">ATTRIBUTE SELECTOR</th>
+<tr class="text-center bgandcolor6">
+	<td>[attribute] selector</td>
+	<td>tag name[attribute]</td>
+	<td>  </td>
+	<td> used to select elements with a specified attribute.</td>
+	<td> a[target] </td>
+	<td> select a tag with attribute target.</td>
+	<td><a href="css-attribute.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor6">
+	<td>[attribute="value"] selector</td>
+	<td>tag name[attribute="value"]</td>
+	<td> </td>
+	<td>used to select elements with a specified attribute and value.</td>
+	<td>a[target="_blank"] </td>
+	<td>select a tag with attribute target="_blank".</td>
+	<td><a href="css-attribute-target.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor6">
+	<td>[attribute~="value"] selector</td>
+	<td> [attribute~="value"] </td>
+	<td> ~ </td>
+	<td> used to select elements with an attribute value containing a specified word.</td>
+	<td> [title~="flower"] </td>
+	<td> select the attribute with [title="flower"]</td>
+	<td><a href="css-attribute~.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor6">
+	<td>[attribute|="value"] selector</td>
+	<td> [attribute|="value"]</td>
+	<td> | </td>
+	<td>used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).</td>
+	<td> [class|="top"] </td>
+	<td>select the attribute with class that starts with the top before (-).</td>
+	<td><a href="css-attribute-hi.htm" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor6">
+	<td>[attribute^="value"] selector</td>
+	<td> [attribute^="value"] </td>
+	<td> ^ </td>
+	<td>used to select elements with the specified attribute, whose value starts with the specified value.</td>
+	<td> [class^="top"] </td>
+	<td>select the element that start with class=top</td>
+	<td><a href="css-attribute^.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor6">
+	<td>[attribute$="value"] Selector</td>
+	<td> [attribute$="value"] </td>
+	<td> $ </td>
+	<td>used to select elements whose attribute value ends with a specified value.</td>
+	<td> [class$="test"] </td>
+	<td>select the element that end with the test attribute </td>
+	<td><a href="css-attribute$.html" target="_blank">Example</a></td>
+</tr>
+<tr class="text-center bgandcolor6">
+	<td>[attribute*="value"] Selector</td>
+	<td> [attribute*="value"] </td>
+	<td> * </td>
+	<td>used to select elements whose attribute value contains a specified value.</td>
+	<td> class*="top" </td>
+	<td>select all the element which has class name test</td>
+	<td><a href="css-attribute-global.html" target="_blank">Example</a></td>
+</tr>
+
+</table>
+
+
+<script>
+
+</script>
+</body>
+</html>
